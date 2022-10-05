@@ -1,0 +1,35 @@
+GET http://localhost:3000/api/inmuebles
+
+###
+POST http://localhost:3000/api/inmuebles
+Content-Type: application/json
+
+{
+  "piso" : "2",
+  "letra" : "E",
+  "extension" : 65, 
+  "numero_habitaciones" : 3,
+  "alquilado" : false, 
+  "nombre_propietario" : "Pedro",
+  "mail_contacto" : "pedro.pedro.pedro@gmail.com"
+}
+
+
+
+###
+PUT http://localhost:3000/api/inmuebles/633e020a943f0301cc733ae4
+Content-Type: application/json
+
+{
+  "piso" : "1",
+  "letra" : "A",
+  "extension" : 65, // (m2)
+  "numero_habitaciones" : 2,
+  "alquilado" : true, //SI/NO
+  "nombre_propietario" : "Roberto-modificado",
+  "mail_contacto" : "roberto.alonso.gandia@gmail.com"
+}
+###
+DELETE http://localhost:3000/api/inmuebles/633e020a943f0301cc733ae4
+
+
